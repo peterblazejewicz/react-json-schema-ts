@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
 
-import ReactJsonSchema from 'ReactJsonSchema';
+import ReactJsonSchema from './ReactJsonSchema';
 
 const logo = require('./logo.svg');
 
 const welcomeSchema = {
   component: 'h2',
   className: 'text-center',
-  text: 'Hello World!'
+  text: 'Hello World!',
 };
 
 const welcomeBanner = new ReactJsonSchema();
