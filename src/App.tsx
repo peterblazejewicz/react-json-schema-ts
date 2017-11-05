@@ -1,8 +1,18 @@
-import * as React from 'react';
+import React from 'react';
 import './App.css';
+
+import ReactJsonSchema from 'ReactJsonSchema';
 
 const logo = require('./logo.svg');
 
+const welcomeSchema = {
+  component: 'h2',
+  className: 'text-center',
+  text: 'Hello World!'
+};
+
+const welcomeBanner = new ReactJsonSchema();
+welcomeBanner.parseSchema(welcomeSchema);
 class App extends React.Component {
   render() {
     return (
